@@ -1,0 +1,16 @@
+<program name="acit">
+    <course type="ACIT1420">
+        <crn>44279</crn>
+        <type>A</type>
+        <day>Fri</day>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor>Zhang, Lei</instructor>
+        <BldgRoom>DTC 578</BldgRoom>
+        <startDate>05-Sep-18</startDate>
+        <endDate>07-Dec-18</endDate>
+        <max>25</max>
+        <act>25</act>
+        <hrs>2.83</hrs>
+    </course>
+</program>
