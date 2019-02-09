@@ -91,7 +91,8 @@ function displayOrder() {
   let x = rootxml.childNodes;
   for (i = 0; i < x.length; i++) {
       if (x[i].nodeName == 'course') {
-          resultmenu += showCourse(x[i]);
+        resultmenu += "<h3>CRN: " + x[i].getAttribute('type') + "</h3>";
+        resultmenu += showCourse(x[i]);
       }
   }  
   return resultmenu;
@@ -102,7 +103,7 @@ function showCourse(dat) {
   choices = dat.childNodes;
   for (y = 0; y < choices.length; y++) {
     if (choices[y].nodeName == 'crn') {
-      result += "<h3>CRN: " + choices[y].textContent + "</h3>";
+      result += "<p>CRN: " + choices[y].textContent + "</p>";
     }
     else if (choices[y].nodeName == 'type') {
       result += "<p>Type: " + choices[y].textContent + "</p>";
