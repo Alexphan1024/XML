@@ -1,0 +1,470 @@
+<program>
+    <course type="ACIT1420">
+        <crn>44279</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Zhang, Lei</instructor>
+        <BldgRoom>DTC 578</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>25</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT1515">
+        <crn>34319</crn>
+        <type>A</type>
+        <beginTime>1330</beginTime>
+        <endTime>1620</endTime>
+        <instructor> Lane, Thomas F</instructor>
+        <BldgRoom>DTC 581</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>25</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT1620">
+        <crn>34322</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Hart, Richard</instructor>
+        <BldgRoom>DTC 552</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>25</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT1630">
+        <crn>34355</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Yu, Benjamin</instructor>
+        <BldgRoom>DTC 676</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>25</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT1420">
+        <crn>44280</crn>
+        <type>A</type>
+        <beginTime>1130</beginTime>
+        <endTime>1420</endTime>
+        <instructor> Zhang, Lei</instructor>
+        <BldgRoom>DTC 552</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>24</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT1515">
+        <crn>34320</crn>
+        <type>A</type>
+        <beginTime>1330</beginTime>
+        <endTime>1620</endTime>
+        <instructor> Lane, Thomas F</instructor>
+        <BldgRoom>DTC 581</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>25</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT1620">
+        <crn>34323</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Hart, Richard</instructor>
+        <BldgRoom>DTC 552</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>25</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT1630">
+        <crn>34356</crn>
+        <type>A</type>
+        <beginTime>1330</beginTime>
+        <endTime>1620</endTime>
+        <instructor> Yu, Benjamin</instructor>
+        <BldgRoom>DTC 676</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>25</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT1420">
+        <crn>44946</crn>
+        <type>A</type>
+        <beginTime>1330</beginTime>
+        <endTime>1620</endTime>
+        <instructor> Zhang, Lei</instructor>
+        <BldgRoom>DTC 590</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>25</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT1515">
+        <crn>41869</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Lane, Thomas F</instructor>
+        <BldgRoom>DTC 581</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>26</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT1620">
+        <crn>41870</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Hart, Richard</instructor>
+        <BldgRoom>DTC 552</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>25</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT1630">
+        <crn>41871</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Yu, Benjamin</instructor>
+        <BldgRoom>DTC 676</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>25</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT2420">
+        <crn>45151</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Parry, James</instructor>
+        <BldgRoom>DTC 581</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>24</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT2515">
+        <crn>44948</crn>
+        <type>A</type>
+        <beginTime>1330</beginTime>
+        <endTime>1620</endTime>
+        <instructor> Mulder, Mike</instructor>
+        <BldgRoom>DTC 652</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>21</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT2520">
+        <crn>44951</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Aibin, Michal</instructor>
+        <BldgRoom>DTC 581</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>24</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT2620">
+        <crn>44954</crn>
+        <type>A</type>
+        <beginTime>1330</beginTime>
+        <endTime>1620</endTime>
+        <instructor> Lane, Thomas F</instructor>
+        <BldgRoom>DTC 590</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>22</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT2831">
+        <crn>45153</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Lord, Trevor Dean</instructor>
+        <BldgRoom>DTC 590</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>24</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT2420">
+        <crn>45152</crn>
+        <type>A</type>
+        <beginTime>1130</beginTime>
+        <endTime>1420</endTime>
+        <instructor> Parry, James</instructor>
+        <BldgRoom>DTC 581</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>22</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT2515">
+        <crn>44949</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Mulder, Mike</instructor>
+        <BldgRoom>DTC 652</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>17</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT2520">
+        <crn>44952</crn>
+        <type>A</type>
+        <beginTime>1330</beginTime>
+        <endTime>1620</endTime>
+        <instructor> Parry, James</instructor>
+        <BldgRoom>DTC 581</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>17</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT2620">
+        <crn>44955</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Lane, Thomas F</instructor>
+        <BldgRoom>DTC 578</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>13</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT2831">
+        <crn>45154</crn>
+        <type>A</type>
+        <beginTime>1330</beginTime>
+        <endTime>1620</endTime>
+        <instructor> Lord, Trevor Dean</instructor>
+        <BldgRoom>DTC 578</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>19</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT3420">
+        <crn>45155</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Zhang, Lei</instructor>
+        <BldgRoom>DTC 578</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>24</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT3475">
+        <crn>45160</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> ,</instructor>
+        <BldgRoom>DTC</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>0</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT3640">
+        <crn>40125</crn>
+        <type>A</type>
+        <beginTime>1330</beginTime>
+        <endTime>1620</endTime>
+        <instructor> Klug, Bill</instructor>
+        <BldgRoom>DTC 578</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>25</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT3645">
+        <crn>45161</crn>
+        <type>A</type>
+        <beginTime>1330</beginTime>
+        <endTime>1620</endTime>
+        <instructor> O'Connor, Flynn</instructor>
+        <BldgRoom>DTC 578</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>22</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT3771">
+        <crn>45157</crn>
+        <type>A</type>
+        <beginTime>1330</beginTime>
+        <endTime>1620</endTime>
+        <instructor> Shah, Vidhi</instructor>
+        <BldgRoom>DTC 590</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>22</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT3900">
+        <crn>44276</crn>
+        <type>A</type>
+        <beginTime>1330</beginTime>
+        <endTime>1620</endTime>
+        <instructor> Aibin, Michal</instructor>
+        <BldgRoom>DTC 590</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>20</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT3910">
+        <crn>34750</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Guichon, Patrick J</instructor>
+        <BldgRoom>DTC 590</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>24</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT3420">
+        <crn>45156</crn>
+        <type>A</type>
+        <beginTime>1330</beginTime>
+        <endTime>1620</endTime>
+        <instructor> Zhang, Lei</instructor>
+        <BldgRoom>DTC 578</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>20</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT3640">
+        <crn>40126</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Klug, Bill</instructor>
+        <BldgRoom>DTC 578</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>19</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT3650">
+        <crn>40129</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Aibin, Michal</instructor>
+        <BldgRoom>DTC 581</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>39</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT3771">
+        <crn>45158</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Shah, Vidhi</instructor>
+        <BldgRoom>DTC 590</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>19</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT3895">
+        <crn>45162</crn>
+        <type>A</type>
+        <beginTime>1330</beginTime>
+        <endTime>1620</endTime>
+        <instructor> Aibin, Michal</instructor>
+        <BldgRoom>DTC 581</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>19</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT3900">
+        <crn>44277</crn>
+        <type>A</type>
+        <beginTime>830</beginTime>
+        <endTime>1120</endTime>
+        <instructor> Aibin, Michal</instructor>
+        <BldgRoom>DTC 581</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>20</act>
+        <hrs>2.83</hrs>
+    </course>
+    <course type="ACIT3910">
+        <crn>34751</crn>
+        <type>A</type>
+        <beginTime>1330</beginTime>
+        <endTime>1620</endTime>
+        <instructor> Guichon, Patrick J</instructor>
+        <BldgRoom>DTC 552</BldgRoom>
+        <startDate>05 Sep 2018</startDate>
+        <endDate>07 Dec 2018</endDate>
+        <max>25</max>
+        <act>19</act>
+        <hrs>2.83</hrs>
+    </course>
+</program>

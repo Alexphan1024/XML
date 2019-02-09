@@ -1,11 +1,12 @@
 var fs = require("fs");
-data = fs.readFileSync("201830-Subject_Course Timetables - ttbl0010.csv");
+data = fs.readFileSync("data/temp.xml");
 var csv = require("csv-parse");
 
 var xmldom = require("xmldom");
 parser = new xmldom.DOMParser();
 xmldoc = parser.parseFromString(data.toString(), "text/xml");
 rootxml = xmldoc.documentElement;
+add_from_csv();
 
 var http = require("http");
 http
@@ -19,41 +20,60 @@ http
 function saveData() {
   serializer = new xmldom.XMLSerializer();
   tosave = serializer.serializeToString(xmldoc);
-  fs.writeFileSync("data/newmenu.xml", tosave);
+  fs.writeFileSync("data/201830-acit.xml", tosave);
 }
 
 function add_from_csv() {
-  csvdata = fs.readFileSync("data/kids menu.csv");
+  csvdata = fs.readFileSync("data/201830-Subject_Course Timetables.csv");
   csv(csvdata, { trim: true, skip_empty_lines: true, from_line: 2 })
     .on("readable", function() {
       let record;
-      let category = xmldoc.createElement("category");
-      let cat_list = [];
+      let course = xmldoc.createElement("course");
       while ((record = this.read())) {
-        
-        fooditem = xmldoc.createElement("fooditem");
-        price = xmldoc.createElement("price");
-        pcs = xmldoc.createElement("pcs");
-        foodtype = xmldoc.createElement("foodtype");
+        if (record[3].includes(process.argv[2].toUpperCase())) {
+          course = xmldoc.createElement("course");
+          crn = xmldoc.createElement("crn");
+          type = xmldoc.createElement("type");
+          day = xmldoc.createElement("day");
+          bT = xmldoc.createElement("beginTime");
+          eT = xmldoc.createElement("endTime");
+          instr = xmldoc.createElement("instructor");
+          BR = xmldoc.createElement("BldgRoom");
+          startDate = xmldoc.createElement("startDate");
+          endDate = xmldoc.createElement("endDate");
+          max = xmldoc.createElement("max");
+          act = xmldoc.createElement("act");
+          hrs = xmldoc.createElement("hrs");
 
-        category.setAttribute("type", record[0]);
-        fooditem.setAttribute("name", record[1]);
+          course.setAttribute("type", record[3]);
 
-        price.textContent = record[4];
-        pcs.textContent = record[2];
+          crn.textContent = record[2];
+          type.textContent = record[4];
+          day.textContent = record[5];
+          bT.textContent = record[6];
+          eT.textContent = record[7];
+          instr.textContent = record[8];
+          BR.textContent = record[9];
+          startDate.textContent = record[10];
+          endDate.textContent = record[11];
+          max.textContent = record[12];
+          act.textContent = record[13];
+          hrs.textContent = record[14];
 
-        if (record[3] == "y") {
-          foodtype.textContent = "V";
-        } else {
-          foodtype.textContent = record[3];
-        }
+          course.appendChild(crn);
+          course.appendChild(type);
+          course.appendChild(bT);
+          course.appendChild(eT);
+          course.appendChild(instr);
+          course.appendChild(BR);
+          course.appendChild(startDate);
+          course.appendChild(endDate);
+          course.appendChild(max);
+          course.appendChild(act);
+          course.appendChild(hrs);
 
-        fooditem.appendChild(price);
-        fooditem.appendChild(pcs);
-        fooditem.appendChild(foodtype);
-        category.appendChild(fooditem);
-
-        rootxml.appendChild(category);
+          rootxml.appendChild(course);
+        } 
       }
     })
     .on("end", function() {
