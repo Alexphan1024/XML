@@ -11,8 +11,12 @@ add_from_csv();
 var http = require("http");
 http
   .createServer(function(req, res) {
+    data = fs.readFileSync('./data/201830-acit.xml');
+    parser = new xmldom.DOMParser();
+    xmldoc = parser.parseFromString(data.toString(), 'text/xml');
+    rootxml = xmldoc.documentElement;
     res.writeHead(200, { "Content-Type": "text/html" });
-    res.write(`Test`);
+    res.write(displayOrder());
     res.end();
   })
   .listen(8080); //the server object listens on port 8080
@@ -79,4 +83,59 @@ function add_from_csv() {
     .on("end", function() {
       saveData(); // save our document
     });
+}
+
+function displayOrder() {
+  let resultmenu = '';
+  let x = rootxml.childNodes;
+  for (i = 0; i < x.length; i++) {
+      if (x[i].nodeName == 'course') {
+          resultmenu += showCourse(x[i]);
+      }
+  }  
+  return resultmenu;
+}
+
+function showCourse(dat) {
+  result = '';
+  choices = dat.childNodes;
+  for (y = 0; y < choices.length; y++) {
+    if (choices[y].nodeName == 'crn') {
+      result += "<h3>CRN: " + choices[y].textContent + "</h3>";
+    }
+    else if (choices[y].nodeName == 'type') {
+      result += "<p>Type: " + choices[y].textContent + "</p>";
+    }
+    else if (choices[y].nodeName == 'day') {
+      result += "<p>Day: " + choices[y].textContent + "</p>";
+    } 
+    else if (choices[y].nodeName == 'beginTime') {
+      result += "<p>Begin Time: " + choices[y].textContent + "</p>";
+    } 
+    else if (choices[y].nodeName == 'endTime') {
+      result += "<p>End Time: " + choices[y].textContent + "</p>";
+    }
+    else if (choices[y].nodeName == 'instructor') {
+      result += "<p>Instructor: " + choices[y].textContent + "</p>";
+    } 
+    else if (choices[y].nodeName == 'BldgRoom') {
+      result += "<p>Building Room: " + choices[y].textContent + "</p>";
+    } 
+    else if (choices[y].nodeName == 'startDate') {
+      result += "<p>Start Date: " + choices[y].textContent + "</p>";
+    } 
+    else if (choices[y].nodeName == 'endDate') {
+      result += "<p>End Date: " + choices[y].textContent + "</p>";
+    } 
+    else if (choices[y].nodeName == 'max') {
+      result += "<p>Max: " + choices[y].textContent + "</p>";
+    }
+    else if (choices[y].nodeName == 'act') {
+      result += "<p>Act: " + choices[y].textContent + "</p>";
+    } 
+    else if (choices[y].nodeName == 'hrs') {
+      result += "<p>Hours: " + choices[y].textContent + "</p>";
+    }  
+  }  
+  return result
 }
