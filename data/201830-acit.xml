@@ -4,6 +4,7 @@
     <course type="ORGB1100">
         <crn>34334</crn>
         <type>A</type>
+        <day>Tue</day>
         <beginTime>830</beginTime>
         <endTime>1050</endTime>
         <instructor> Morgan, Peter A</instructor>
@@ -17,6 +18,7 @@
     <course type="ORGB1100">
         <crn>34335</crn>
         <type>A</type>
+        <day>Tue</day>
         <beginTime>1330</beginTime>
         <endTime>1550</endTime>
         <instructor> Morgan, Peter A</instructor>
@@ -30,6 +32,7 @@
     <course type="ORGB1100">
         <crn>41875</crn>
         <type>A</type>
+        <day>Wed</day>
         <beginTime>830</beginTime>
         <endTime>1050</endTime>
         <instructor> Morgan, Peter A</instructor>
@@ -43,6 +46,7 @@
     <course type="ORGB2510">
         <crn>34130</crn>
         <type>A</type>
+        <day>Fri</day>
         <beginTime>1330</beginTime>
         <endTime>1520</endTime>
         <instructor> Bachrich, Simon</instructor>
@@ -56,6 +60,7 @@
     <course type="ORGB2510">
         <crn>34131</crn>
         <type>A</type>
+        <day>Fri</day>
         <beginTime>1530</beginTime>
         <endTime>1720</endTime>
         <instructor> Bachrich, Simon</instructor>
@@ -69,6 +74,7 @@
     <course type="ORGB2325">
         <crn>39321</crn>
         <type>L</type>
+        <day>Mon</day>
         <beginTime>1230</beginTime>
         <endTime>1420</endTime>
         <instructor> Bachrich, Simon</instructor>
@@ -82,6 +88,7 @@
     <course type="ORGB2325">
         <crn>39322</crn>
         <type>L</type>
+        <day>Mon</day>
         <beginTime>830</beginTime>
         <endTime>1020</endTime>
         <instructor> Bachrich, Simon</instructor>
@@ -95,6 +102,7 @@
     <course type="ORGB3600">
         <crn>32079</crn>
         <type>L</type>
+        <day>Wed</day>
         <beginTime>1330</beginTime>
         <endTime>1420</endTime>
         <instructor> Jagger, Joanna Kristinn</instructor>
@@ -108,6 +116,7 @@
     <course type="ORGB3600">
         <crn>32081</crn>
         <type>A</type>
+        <day>Wed</day>
         <beginTime>1030</beginTime>
         <endTime>1220</endTime>
         <instructor> Jagger, Joanna Kristinn</instructor>
@@ -121,6 +130,7 @@
     <course type="ORGB3600">
         <crn>32079</crn>
         <type>L</type>
+        <day>Wed</day>
         <beginTime>1330</beginTime>
         <endTime>1420</endTime>
         <instructor> Jagger, Joanna Kristinn</instructor>
@@ -134,6 +144,7 @@
     <course type="ORGB3600">
         <crn>32080</crn>
         <type>A</type>
+        <day>Wed</day>
         <beginTime>830</beginTime>
         <endTime>1020</endTime>
         <instructor> Jagger, Joanna Kristinn</instructor>
@@ -147,6 +158,7 @@
     <course type="ORGB3600">
         <crn>32079</crn>
         <type>L</type>
+        <day>Wed</day>
         <beginTime>1330</beginTime>
         <endTime>1420</endTime>
         <instructor> Jagger, Joanna Kristinn</instructor>
@@ -160,6 +172,7 @@
     <course type="ORGB3600">
         <crn>32081</crn>
         <type>A</type>
+        <day>Wed</day>
         <beginTime>1030</beginTime>
         <endTime>1220</endTime>
         <instructor> Jagger, Joanna Kristinn</instructor>
@@ -173,6 +186,7 @@
     <course type="ORGB3600">
         <crn>32079</crn>
         <type>L</type>
+        <day>Wed</day>
         <beginTime>1330</beginTime>
         <endTime>1420</endTime>
         <instructor> Jagger, Joanna Kristinn</instructor>
@@ -186,6 +200,7 @@
     <course type="ORGB3600">
         <crn>32080</crn>
         <type>A</type>
+        <day>Wed</day>
         <beginTime>830</beginTime>
         <endTime>1020</endTime>
         <instructor> Jagger, Joanna Kristinn</instructor>
@@ -199,6 +214,7 @@
     <course type="ORGB1100">
         <crn>32434</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1130</beginTime>
         <endTime>1220</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -212,6 +228,7 @@
     <course type="ORGB1100">
         <crn>32434</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1130</beginTime>
         <endTime>1220</endTime>
         <instructor> Merali, Zena</instructor>
@@ -225,6 +242,7 @@
     <course type="ORGB1100">
         <crn>32435</crn>
         <type>A</type>
+        <day>Mon</day>
         <beginTime>1030</beginTime>
         <endTime>1220</endTime>
         <instructor> Grant, Laurie</instructor>
@@ -238,6 +256,7 @@
     <course type="ORGB1100">
         <crn>32436</crn>
         <type>A</type>
+        <day>Tue</day>
         <beginTime>1430</beginTime>
         <endTime>1620</endTime>
         <instructor> ,</instructor>
@@ -251,6 +270,7 @@
     <course type="ORGB1100">
         <crn>32434</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1130</beginTime>
         <endTime>1220</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -264,6 +284,7 @@
     <course type="ORGB1100">
         <crn>32434</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1130</beginTime>
         <endTime>1220</endTime>
         <instructor> Merali, Zena</instructor>
@@ -277,6 +298,7 @@
     <course type="ORGB1100">
         <crn>32437</crn>
         <type>A</type>
+        <day>Thu</day>
         <beginTime>1330</beginTime>
         <endTime>1520</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -290,6 +312,7 @@
     <course type="ORGB1100">
         <crn>32434</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1130</beginTime>
         <endTime>1220</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -303,6 +326,7 @@
     <course type="ORGB1100">
         <crn>32434</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1130</beginTime>
         <endTime>1220</endTime>
         <instructor> Merali, Zena</instructor>
@@ -316,6 +340,7 @@
     <course type="ORGB1100">
         <crn>32438</crn>
         <type>A</type>
+        <day>Mon</day>
         <beginTime>1230</beginTime>
         <endTime>1420</endTime>
         <instructor> Merali, Zena</instructor>
@@ -329,6 +354,7 @@
     <course type="ORGB1100">
         <crn>32434</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1130</beginTime>
         <endTime>1220</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -342,6 +368,7 @@
     <course type="ORGB1100">
         <crn>32434</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1130</beginTime>
         <endTime>1220</endTime>
         <instructor> Merali, Zena</instructor>
@@ -355,6 +382,7 @@
     <course type="ORGB1100">
         <crn>32439</crn>
         <type>A</type>
+        <day>Wed</day>
         <beginTime>1030</beginTime>
         <endTime>1220</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -368,6 +396,7 @@
     <course type="ORGB1100">
         <crn>32434</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1130</beginTime>
         <endTime>1220</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -381,6 +410,7 @@
     <course type="ORGB1100">
         <crn>32434</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1130</beginTime>
         <endTime>1220</endTime>
         <instructor> Merali, Zena</instructor>
@@ -394,6 +424,7 @@
     <course type="ORGB1100">
         <crn>32440</crn>
         <type>A</type>
+        <day>Wed</day>
         <beginTime>830</beginTime>
         <endTime>1020</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -407,6 +438,7 @@
     <course type="ORGB1100">
         <crn>33277</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1230</beginTime>
         <endTime>1320</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -420,6 +452,7 @@
     <course type="ORGB1100">
         <crn>33277</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1230</beginTime>
         <endTime>1320</endTime>
         <instructor> Merali, Zena</instructor>
@@ -433,6 +466,7 @@
     <course type="ORGB1100">
         <crn>40116</crn>
         <type>A</type>
+        <day>Wed</day>
         <beginTime>830</beginTime>
         <endTime>1020</endTime>
         <instructor> Merali, Zena</instructor>
@@ -446,6 +480,7 @@
     <course type="ORGB1100">
         <crn>33277</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1230</beginTime>
         <endTime>1320</endTime>
         <instructor> Merali, Zena</instructor>
@@ -459,6 +494,7 @@
     <course type="ORGB1100">
         <crn>33277</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1230</beginTime>
         <endTime>1320</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -472,6 +508,7 @@
     <course type="ORGB1100">
         <crn>41027</crn>
         <type>A</type>
+        <day>Thu</day>
         <beginTime>1030</beginTime>
         <endTime>1220</endTime>
         <instructor> Merali, Zena</instructor>
@@ -485,6 +522,7 @@
     <course type="ORGB1100">
         <crn>41900</crn>
         <type>A</type>
+        <day>Mon</day>
         <beginTime>830</beginTime>
         <endTime>1020</endTime>
         <instructor> ,</instructor>
@@ -498,6 +536,7 @@
     <course type="ORGB1100">
         <crn>32446</crn>
         <type>A</type>
+        <day>Mon</day>
         <beginTime>1230</beginTime>
         <endTime>1420</endTime>
         <instructor> Grant, Laurie</instructor>
@@ -511,6 +550,7 @@
     <course type="ORGB1100">
         <crn>33277</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1230</beginTime>
         <endTime>1320</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -524,6 +564,7 @@
     <course type="ORGB1100">
         <crn>33277</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1230</beginTime>
         <endTime>1320</endTime>
         <instructor> Merali, Zena</instructor>
@@ -537,6 +578,7 @@
     <course type="ORGB1100">
         <crn>32444</crn>
         <type>A</type>
+        <day>Wed</day>
         <beginTime>1230</beginTime>
         <endTime>1420</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -550,6 +592,7 @@
     <course type="ORGB1100">
         <crn>32444</crn>
         <type>A</type>
+        <day>Wed</day>
         <beginTime>1230</beginTime>
         <endTime>1420</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -563,6 +606,7 @@
     <course type="ORGB1100">
         <crn>33277</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1230</beginTime>
         <endTime>1320</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -576,6 +620,7 @@
     <course type="ORGB1100">
         <crn>33277</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1230</beginTime>
         <endTime>1320</endTime>
         <instructor> Merali, Zena</instructor>
@@ -589,6 +634,7 @@
     <course type="ORGB1100">
         <crn>32442</crn>
         <type>A</type>
+        <day>Thu</day>
         <beginTime>830</beginTime>
         <endTime>1020</endTime>
         <instructor>* Merali, Zena</instructor>
@@ -602,6 +648,7 @@
     <course type="ORGB1100">
         <crn>32442</crn>
         <type>A</type>
+        <day>Thu</day>
         <beginTime>830</beginTime>
         <endTime>1020</endTime>
         <instructor>* Merali, Zena</instructor>
@@ -615,6 +662,7 @@
     <course type="ORGB1100">
         <crn>33277</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1230</beginTime>
         <endTime>1320</endTime>
         <instructor> Merali, Zena</instructor>
@@ -628,6 +676,7 @@
     <course type="ORGB1100">
         <crn>33277</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1230</beginTime>
         <endTime>1320</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -641,6 +690,7 @@
     <course type="ORGB1100">
         <crn>32441</crn>
         <type>A</type>
+        <day>Tue</day>
         <beginTime>930</beginTime>
         <endTime>1120</endTime>
         <instructor> Grant, Laurie</instructor>
@@ -654,6 +704,7 @@
     <course type="ORGB1100">
         <crn>33277</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1230</beginTime>
         <endTime>1320</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -667,6 +718,7 @@
     <course type="ORGB1100">
         <crn>33277</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1230</beginTime>
         <endTime>1320</endTime>
         <instructor> Merali, Zena</instructor>
@@ -680,6 +732,7 @@
     <course type="ORGB1100">
         <crn>32448</crn>
         <type>A</type>
+        <day>Wed</day>
         <beginTime>830</beginTime>
         <endTime>1020</endTime>
         <instructor> Culver, Charlotte</instructor>
@@ -693,6 +746,7 @@
     <course type="ORGB1100">
         <crn>41809</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1430</beginTime>
         <endTime>1520</endTime>
         <instructor>* Culver, Charlotte</instructor>
@@ -706,6 +760,7 @@
     <course type="ORGB1100">
         <crn>32447</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1330</beginTime>
         <endTime>1420</endTime>
         <instructor> Culver, Charlotte</instructor>
@@ -719,6 +774,7 @@
     <course type="ORGB1100">
         <crn>32447</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1330</beginTime>
         <endTime>1420</endTime>
         <instructor> Graham, Glenn William</instructor>
@@ -732,6 +788,7 @@
     <course type="ORGB1100">
         <crn>32449</crn>
         <type>A</type>
+        <day>Tue</day>
         <beginTime>1530</beginTime>
         <endTime>1720</endTime>
         <instructor> Matthee, Pierre</instructor>
@@ -745,6 +802,7 @@
     <course type="ORGB1100">
         <crn>32447</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1330</beginTime>
         <endTime>1420</endTime>
         <instructor> Culver, Charlotte</instructor>
@@ -758,6 +816,7 @@
     <course type="ORGB1100">
         <crn>32447</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1330</beginTime>
         <endTime>1420</endTime>
         <instructor> Graham, Glenn William</instructor>
@@ -771,6 +830,7 @@
     <course type="ORGB1100">
         <crn>32450</crn>
         <type>A</type>
+        <day>Mon</day>
         <beginTime>1230</beginTime>
         <endTime>1420</endTime>
         <instructor> Matthee, Pierre</instructor>
@@ -784,6 +844,7 @@
     <course type="ORGB1100">
         <crn>32447</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1330</beginTime>
         <endTime>1420</endTime>
         <instructor> Graham, Glenn William</instructor>
@@ -797,6 +858,7 @@
     <course type="ORGB1100">
         <crn>32447</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1330</beginTime>
         <endTime>1420</endTime>
         <instructor> Culver, Charlotte</instructor>
@@ -810,6 +872,7 @@
     <course type="ORGB1100">
         <crn>32451</crn>
         <type>A</type>
+        <day>Wed</day>
         <beginTime>830</beginTime>
         <endTime>1020</endTime>
         <instructor> Graham, Glenn William</instructor>
@@ -823,6 +886,7 @@
     <course type="ORGB1100">
         <crn>32447</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1330</beginTime>
         <endTime>1420</endTime>
         <instructor> Culver, Charlotte</instructor>
@@ -836,6 +900,7 @@
     <course type="ORGB1100">
         <crn>32447</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1330</beginTime>
         <endTime>1420</endTime>
         <instructor> Graham, Glenn William</instructor>
@@ -849,6 +914,7 @@
     <course type="ORGB1100">
         <crn>32452</crn>
         <type>A</type>
+        <day>Mon</day>
         <beginTime>1430</beginTime>
         <endTime>1620</endTime>
         <instructor> Graham, Glenn William</instructor>
@@ -862,6 +928,7 @@
     <course type="ORGB1100">
         <crn>32447</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1330</beginTime>
         <endTime>1420</endTime>
         <instructor> Graham, Glenn William</instructor>
@@ -875,6 +942,7 @@
     <course type="ORGB1100">
         <crn>32447</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1330</beginTime>
         <endTime>1420</endTime>
         <instructor> Culver, Charlotte</instructor>
@@ -888,6 +956,7 @@
     <course type="ORGB1100">
         <crn>32453</crn>
         <type>A</type>
+        <day>Mon</day>
         <beginTime>1430</beginTime>
         <endTime>1620</endTime>
         <instructor> Matthee, Pierre</instructor>
@@ -901,6 +970,7 @@
     <course type="ORGB1100">
         <crn>32447</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1330</beginTime>
         <endTime>1420</endTime>
         <instructor> Culver, Charlotte</instructor>
@@ -914,6 +984,7 @@
     <course type="ORGB1100">
         <crn>32447</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1330</beginTime>
         <endTime>1420</endTime>
         <instructor> Graham, Glenn William</instructor>
@@ -927,6 +998,7 @@
     <course type="ORGB1100">
         <crn>32454</crn>
         <type>A</type>
+        <day>Mon</day>
         <beginTime>930</beginTime>
         <endTime>1120</endTime>
         <instructor> Matthee, Pierre</instructor>
@@ -940,6 +1012,7 @@
     <course type="ORGB1100">
         <crn>32455</crn>
         <type>A</type>
+        <day>Wed</day>
         <beginTime>1230</beginTime>
         <endTime>1420</endTime>
         <instructor> Graham, Glenn William</instructor>
@@ -953,6 +1026,7 @@
     <course type="ORGB1100">
         <crn>34585</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1430</beginTime>
         <endTime>1520</endTime>
         <instructor>* Culver, Charlotte</instructor>
@@ -966,6 +1040,7 @@
     <course type="ORGB1100">
         <crn>34585</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1430</beginTime>
         <endTime>1520</endTime>
         <instructor> Graham, Glenn William</instructor>
@@ -979,6 +1054,7 @@
     <course type="ORGB1100">
         <crn>32456</crn>
         <type>A</type>
+        <day>Wed</day>
         <beginTime>1030</beginTime>
         <endTime>1220</endTime>
         <instructor> Graham, Glenn William</instructor>
@@ -992,6 +1068,7 @@
     <course type="ORGB1100">
         <crn>34585</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1430</beginTime>
         <endTime>1520</endTime>
         <instructor>* Culver, Charlotte</instructor>
@@ -1005,6 +1082,7 @@
     <course type="ORGB1100">
         <crn>34585</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1430</beginTime>
         <endTime>1520</endTime>
         <instructor> Graham, Glenn William</instructor>
@@ -1018,6 +1096,7 @@
     <course type="ORGB1100">
         <crn>32457</crn>
         <type>A</type>
+        <day>Tue</day>
         <beginTime>1230</beginTime>
         <endTime>1420</endTime>
         <instructor> Matthee, Pierre</instructor>
@@ -1031,6 +1110,7 @@
     <course type="ORGB1100">
         <crn>34585</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1430</beginTime>
         <endTime>1520</endTime>
         <instructor> Graham, Glenn William</instructor>
@@ -1044,6 +1124,7 @@
     <course type="ORGB1100">
         <crn>34585</crn>
         <type>L</type>
+        <day>Tue</day>
         <beginTime>1430</beginTime>
         <endTime>1520</endTime>
         <instructor>* Culver, Charlotte</instructor>
@@ -1057,6 +1138,7 @@
     <course type="ORGB1100">
         <crn>32445</crn>
         <type>A</type>
+        <day>Thu</day>
         <beginTime>1130</beginTime>
         <endTime>1320</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -1070,6 +1152,7 @@
     <course type="ORGB1100">
         <crn>33277</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1230</beginTime>
         <endTime>1320</endTime>
         <instructor> Giltrow, Mark</instructor>
@@ -1083,6 +1166,7 @@
     <course type="ORGB1100">
         <crn>33277</crn>
         <type>L</type>
+        <day>Fri</day>
         <beginTime>1230</beginTime>
         <endTime>1320</endTime>
         <instructor> Merali, Zena</instructor>
@@ -1096,6 +1180,7 @@
     <course type="ORGB1100">
         <crn>43357</crn>
         <type>A</type>
+        <day>Tue</day>
         <beginTime>1030</beginTime>
         <endTime>1220</endTime>
         <instructor> ,</instructor>
