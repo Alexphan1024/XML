@@ -62,6 +62,7 @@ function add_from_csv() {
 
           course.appendChild(crn);
           course.appendChild(type);
+          course.appendChild(day);q
           course.appendChild(bT);
           course.appendChild(eT);
           course.appendChild(instr);
