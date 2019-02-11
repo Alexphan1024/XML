@@ -131,9 +131,9 @@ function showCourse(dat) {
     } else if (choices[y].nodeName == "endDate") {
       result += "<p>End Date: " + choices[y].textContent + "</p>";
     } else if (choices[y].nodeName == "max") {
-      result += "<p>Max: " + choices[y].textContent + "</p>";
+      result += "<p>Max Student: " + choices[y].textContent + "</p>";
     } else if (choices[y].nodeName == "act") {
-      result += "<p>Act: " + choices[y].textContent + "</p>";
+      result += "<p>Active Students: " + choices[y].textContent + "</p>";
     } else if (choices[y].nodeName == "hrs") {
       result += "<p>Hours: " + choices[y].textContent + "</p>";
     }

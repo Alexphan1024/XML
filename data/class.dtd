@@ -1,6 +1,8 @@
 <!ELEMENT program (course+)>
-<!ELEMENT course (crn, type, day, beginTime, endTime, instructor, BldgRoom, startDate, endDate, max, act, hrs)>
+<!ELEMENT course (status, block, crn, type, day, beginTime, endTime, instructor, BldgRoom, startDate, endDate, max, act, hrs)>
 <!ATTLIST course type CDATA #REQUIRED>
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT block (#PCDATA)>
 <!ELEMENT crn (#PCDATA)>
 <!ELEMENT type (#PCDATA)>
 <!ELEMENT day (#PCDATA)>
