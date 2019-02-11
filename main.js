@@ -6,12 +6,13 @@ var xmldom = require("xmldom");
 parser = new xmldom.DOMParser();
 xmldoc = parser.parseFromString(data.toString(), "text/xml");
 rootxml = xmldoc.documentElement;
+var process_argv = process.argv[2];
 add_from_csv();
 
 var http = require("http");
 http
   .createServer(function(req, res) {
-    data = fs.readFileSync("./data/201830-acit.xml");
+    data = fs.readFileSync(`data/201830-${process_argv}.xml`);
     parser = new xmldom.DOMParser();
     xmldoc = parser.parseFromString(data.toString(), "text/xml");
     rootxml = xmldoc.documentElement;
@@ -24,7 +25,6 @@ http
 function saveData() {
   serializer = new xmldom.XMLSerializer();
   tosave = serializer.serializeToString(xmldoc);
-  var process_argv = process.argv[2];
   fs.writeFileSync(`data/201830-${process_argv}.xml`, tosave);
 }
 
