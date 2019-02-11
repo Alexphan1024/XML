@@ -35,9 +35,11 @@ function add_from_csv() {
       let course = xmldoc.createElement("course");
       while ((record = this.read())) {
         if (record[1].includes(process.argv[2].toUpperCase())) {
-          if (record[8].includes("*") || record[8]==" ,") {
+          if (record[8].includes("*") || record[8] == " ,") {
             continue;
           } else {
+            status = xmldoc.createElement("status");
+            block = xmldoc.createElement("block");
             course = xmldoc.createElement("course");
             crn = xmldoc.createElement("crn");
             type = xmldoc.createElement("type");
@@ -54,6 +56,8 @@ function add_from_csv() {
 
             course.setAttribute("type", record[3]);
 
+            status.textContent = record[0]
+            block.textContent = record[1]
             crn.textContent = record[2];
             type.textContent = record[4];
             day.textContent = record[5];
@@ -67,6 +71,8 @@ function add_from_csv() {
             act.textContent = record[13];
             hrs.textContent = record[14];
 
+            course.appendChild(status);
+            course.appendChild(block);
             course.appendChild(crn);
             course.appendChild(type);
             course.appendChild(day);

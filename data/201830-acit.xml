@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
-<!DOCTYPE program SYSTEM "class.dtd">
+<!DOCTYPE program SYSTEM ">">
 <program>
     <course type="ACIT1420">
+        <status>Active</status>
+        <block>ACIT 1 A</block>
         <crn>44279</crn>
         <type>A</type>
         <day>Fri</day>
@@ -16,6 +18,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT1515">
+        <status>Active</status>
+        <block>ACIT 1 A</block>
         <crn>34319</crn>
         <type>A</type>
         <day>Mon</day>
@@ -30,6 +34,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT1620">
+        <status>Active</status>
+        <block>ACIT 1 A</block>
         <crn>34322</crn>
         <type>A</type>
         <day>Wed</day>
@@ -44,6 +50,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT1630">
+        <status>Active</status>
+        <block>ACIT 1 A</block>
         <crn>34355</crn>
         <type>A</type>
         <day>Thu</day>
@@ -58,6 +66,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="COMM1116">
+        <status>Active</status>
+        <block>ACIT 1 A</block>
         <crn>34328</crn>
         <type>A</type>
         <day>Mon</day>
@@ -72,6 +82,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="MATH1310">
+        <status>Active</status>
+        <block>ACIT 1 A</block>
         <crn>34331</crn>
         <type>A</type>
         <day>Thu</day>
@@ -86,6 +98,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ORGB1100">
+        <status>Active</status>
+        <block>ACIT 1 A</block>
         <crn>34334</crn>
         <type>A</type>
         <day>Tue</day>
@@ -100,6 +114,8 @@
         <hrs>2.33</hrs>
     </course>
     <course type="ACIT1420">
+        <status>Active</status>
+        <block>ACIT 1 B</block>
         <crn>44280</crn>
         <type>A</type>
         <day>Wed</day>
@@ -114,6 +130,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT1515">
+        <status>Active</status>
+        <block>ACIT 1 B</block>
         <crn>34320</crn>
         <type>A</type>
         <day>Fri</day>
@@ -128,6 +146,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT1620">
+        <status>Active</status>
+        <block>ACIT 1 B</block>
         <crn>34323</crn>
         <type>A</type>
         <day>Tue</day>
@@ -142,6 +162,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT1630">
+        <status>Active</status>
+        <block>ACIT 1 B</block>
         <crn>34356</crn>
         <type>A</type>
         <day>Thu</day>
@@ -156,6 +178,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="COMM1116">
+        <status>Active</status>
+        <block>ACIT 1 B</block>
         <crn>34329</crn>
         <type>A</type>
         <day>Mon</day>
@@ -170,6 +194,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="MATH1310">
+        <status>Active</status>
+        <block>ACIT 1 B</block>
         <crn>34332</crn>
         <type>A</type>
         <day>Fri</day>
@@ -184,6 +210,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ORGB1100">
+        <status>Active</status>
+        <block>ACIT 1 B</block>
         <crn>34335</crn>
         <type>A</type>
         <day>Tue</day>
@@ -198,6 +226,8 @@
         <hrs>2.33</hrs>
     </course>
     <course type="ACIT1420">
+        <status>Active</status>
+        <block>ACIT 1 C</block>
         <crn>44946</crn>
         <type>A</type>
         <day>Tue</day>
@@ -212,6 +242,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT1515">
+        <status>Active</status>
+        <block>ACIT 1 C</block>
         <crn>41869</crn>
         <type>A</type>
         <day>Mon</day>
@@ -226,6 +258,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT1620">
+        <status>Active</status>
+        <block>ACIT 1 C</block>
         <crn>41870</crn>
         <type>A</type>
         <day>Thu</day>
@@ -240,6 +274,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT1630">
+        <status>Active</status>
+        <block>ACIT 1 C</block>
         <crn>41871</crn>
         <type>A</type>
         <day>Fri</day>
@@ -254,6 +290,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="COMM1116">
+        <status>Active</status>
+        <block>ACIT 1 C</block>
         <crn>41873</crn>
         <type>A</type>
         <day>Tue</day>
@@ -268,6 +306,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="MATH1310">
+        <status>Active</status>
+        <block>ACIT 1 C</block>
         <crn>41874</crn>
         <type>A</type>
         <day>Fri</day>
@@ -282,6 +322,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ORGB1100">
+        <status>Active</status>
+        <block>ACIT 1 C</block>
         <crn>41875</crn>
         <type>A</type>
         <day>Wed</day>
@@ -296,6 +338,8 @@
         <hrs>2.33</hrs>
     </course>
     <course type="ACIT2420">
+        <status>Active</status>
+        <block>ACIT 2 A</block>
         <crn>45151</crn>
         <type>A</type>
         <day>Tue</day>
@@ -310,6 +354,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT2515">
+        <status>Active</status>
+        <block>ACIT 2 A</block>
         <crn>44948</crn>
         <type>A</type>
         <day>Mon</day>
@@ -324,6 +370,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT2520">
+        <status>Active</status>
+        <block>ACIT 2 A</block>
         <crn>44951</crn>
         <type>A</type>
         <day>Wed</day>
@@ -338,6 +386,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT2620">
+        <status>Active</status>
+        <block>ACIT 2 A</block>
         <crn>44954</crn>
         <type>A</type>
         <day>Thu</day>
@@ -352,6 +402,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT2831">
+        <status>Active</status>
+        <block>ACIT 2 A</block>
         <crn>45153</crn>
         <type>A</type>
         <day>Fri</day>
@@ -366,6 +418,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="COMM2216">
+        <status>Active</status>
+        <block>ACIT 2 A</block>
         <crn>44974</crn>
         <type>A</type>
         <day>Thu</day>
@@ -380,6 +434,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="MATH1350">
+        <status>Active</status>
+        <block>ACIT 2 A</block>
         <crn>44977</crn>
         <type>A</type>
         <day>Mon</day>
@@ -394,6 +450,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT2420">
+        <status>Active</status>
+        <block>ACIT 2 B</block>
         <crn>45152</crn>
         <type>A</type>
         <day>Wed</day>
@@ -408,6 +466,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT2515">
+        <status>Active</status>
+        <block>ACIT 2 B</block>
         <crn>44949</crn>
         <type>A</type>
         <day>Mon</day>
@@ -422,6 +482,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT2520">
+        <status>Active</status>
+        <block>ACIT 2 B</block>
         <crn>44952</crn>
         <type>A</type>
         <day>Tue</day>
@@ -436,6 +498,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT2620">
+        <status>Active</status>
+        <block>ACIT 2 B</block>
         <crn>44955</crn>
         <type>A</type>
         <day>Thu</day>
@@ -450,6 +514,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT2831">
+        <status>Active</status>
+        <block>ACIT 2 B</block>
         <crn>45154</crn>
         <type>A</type>
         <day>Fri</day>
@@ -464,6 +530,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="COMM2216">
+        <status>Active</status>
+        <block>ACIT 2 B</block>
         <crn>44975</crn>
         <type>A</type>
         <day>Thu</day>
@@ -478,6 +546,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="MATH1350">
+        <status>Active</status>
+        <block>ACIT 2 B</block>
         <crn>44978</crn>
         <type>A</type>
         <day>Mon</day>
@@ -492,6 +562,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT3420">
+        <status>Active</status>
+        <block>ACIT 3 A</block>
         <crn>45155</crn>
         <type>A</type>
         <day>Mon</day>
@@ -506,6 +578,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT3640">
+        <status>Active</status>
+        <block>ACIT 3 A</block>
         <crn>40125</crn>
         <type>A</type>
         <day>Tue</day>
@@ -520,6 +594,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT3645">
+        <status>Active</status>
+        <block>ACIT 3 A</block>
         <crn>45161</crn>
         <type>A</type>
         <day>Thu</day>
@@ -534,6 +610,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT3771">
+        <status>Active</status>
+        <block>ACIT 3 A</block>
         <crn>45157</crn>
         <type>A</type>
         <day>Mon</day>
@@ -548,6 +626,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT3900">
+        <status>Active</status>
+        <block>ACIT 3 A</block>
         <crn>44276</crn>
         <type>A</type>
         <day>Fri</day>
@@ -562,6 +642,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT3910">
+        <status>Active</status>
+        <block>ACIT 3 A</block>
         <crn>34750</crn>
         <type>A</type>
         <day>Tue</day>
@@ -576,6 +658,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT3420">
+        <status>Active</status>
+        <block>ACIT 3 B</block>
         <crn>45156</crn>
         <type>A</type>
         <day>Mon</day>
@@ -590,6 +674,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT3640">
+        <status>Active</status>
+        <block>ACIT 3 B</block>
         <crn>40126</crn>
         <type>A</type>
         <day>Tue</day>
@@ -604,6 +690,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT3650">
+        <status>Active</status>
+        <block>ACIT 3 B</block>
         <crn>40129</crn>
         <type>A</type>
         <day>Thu</day>
@@ -618,6 +706,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT3771">
+        <status>Active</status>
+        <block>ACIT 3 B</block>
         <crn>45158</crn>
         <type>A</type>
         <day>Mon</day>
@@ -632,6 +722,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT3895">
+        <status>Active</status>
+        <block>ACIT 3 B</block>
         <crn>45162</crn>
         <type>A</type>
         <day>Thu</day>
@@ -646,6 +738,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT3900">
+        <status>Active</status>
+        <block>ACIT 3 B</block>
         <crn>44277</crn>
         <type>A</type>
         <day>Fri</day>
@@ -660,6 +754,8 @@
         <hrs>2.83</hrs>
     </course>
     <course type="ACIT3910">
+        <status>Active</status>
+        <block>ACIT 3 B</block>
         <crn>34751</crn>
         <type>A</type>
         <day>Tue</day>
