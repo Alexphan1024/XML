@@ -71,8 +71,6 @@ function add_from_csv() {
             act.textContent = record[13];
             hrs.textContent = record[14];
 
-            course.appendChild(status);
-            course.appendChild(block);
             course.appendChild(crn);
             course.appendChild(type);
             course.appendChild(day);
@@ -85,6 +83,7 @@ function add_from_csv() {
             course.appendChild(max);
             course.appendChild(act);
             course.appendChild(hrs);
+            course.appendChild(block);
 
             rootxml.appendChild(course);
           }
