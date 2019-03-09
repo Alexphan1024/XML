@@ -155,7 +155,7 @@ function teacher_xml(data) {
   if(list2.includes(data[8]) == false){
     list2.push(data[8])
 
-    block = xmldoc_teacher.createElement("block");
+    block = xmldoc_teacher.createElement("instructor");
     block.setAttribute("name", data[8]);
     rootxml_teacher.appendChild(block);
   }
