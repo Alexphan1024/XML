@@ -5,7 +5,7 @@ var csv = require("csv-parse");
 var xmldom = require("xmldom");
 parser = new xmldom.DOMParser();
 xmldoc = parser.parseFromString(data.toString(), "text/xml");
-xmldoc_teacher = parser.parseFromString(data.toString(), "text/xml");
+xmldoc_teacher= parser.parseFromString(data.toString(), "text/xml");
 rootxml = xmldoc.documentElement;
 rootxml_teacher = xmldoc_teacher.documentElement;
 var process_argv = process.argv[2];
@@ -87,14 +87,12 @@ function add_from_csv_teacher() {
 
 var list = [];
 function student_xml(data) {
-    if(list.includes(`${data[1].replace(/ /g, "_")}`) == false){
-      newItem = xmldoc.createElement( `${data[1].replace(/ /g, "_")}`);
-      rootxml.appendChild(newItem)
-      list.push(`${data[1].replace(/ /g, "_")}`)
+    if(list.includes(data[1]) == false){
+      list.push(data[1])
 
-      // block = xmldoc.createElement("block");
-      // block.setAttribute("name", `${data[1].replace(/ /g, "_")}`);
-      // rootxml.appendChild(block);
+      block = xmldoc.createElement("block");
+      block.setAttribute("name", data[1]);
+      rootxml.appendChild(block);
     }
 
       status = xmldoc.createElement("status");
@@ -104,6 +102,7 @@ function student_xml(data) {
       day = xmldoc.createElement("day");
       bT = xmldoc.createElement("beginTime");
       eT = xmldoc.createElement("endTime");
+      block = xmldoc.createElement("block");
       instr = xmldoc.createElement("instructor");
       BR = xmldoc.createElement("BldgRoom");
       startDate = xmldoc.createElement("startDate");
@@ -114,7 +113,8 @@ function student_xml(data) {
 
       course.setAttribute("name", data[3]);
 
-      status.textContent = data[0]
+      status.textContent = data[0];
+      block.textContent = data[1];
       crn.textContent = data[2];
       type.textContent = data[4];
       day.textContent = data[5];
@@ -128,6 +128,7 @@ function student_xml(data) {
       act.textContent = data[13];
       hrs.textContent = data[14];
 
+      course.appendChild(block);
       course.appendChild(crn);
       course.appendChild(type);
       course.appendChild(day);
@@ -140,39 +141,44 @@ function student_xml(data) {
       course.appendChild(max);
       course.appendChild(act);
       course.appendChild(hrs);
-    
-      rootxml.getElementsByTagName(`${data[1].replace(/ /g, "_")}`)[0].appendChild(course)
+
+      for (i = 1; i < rootxml.childNodes.length; i++) {
+        if (rootxml.childNodes[i].getAttribute("name") == course.childNodes[0].textContent){
+            course.removeChild(course.childNodes[0])
+            rootxml.childNodes[i].appendChild(course)
+        }
+      }
 }
 
 var list2 = [];
 function teacher_xml(data) {
-  if(list2.includes(`${data[8].replace(/ /g, "_").replace(/,/g, '_').replace(/'/g, '_')}`) == false){
-    newItem = xmldoc_teacher .createElement( `${data[8].replace(/ /g, "_").replace(/,/g, '_').replace(/'/g, '_')}`);
-    rootxml_teacher.appendChild(newItem)
-    list2.push(`${data[8].replace(/ /g, "_").replace(/,/g, '_').replace(/'/g, '_')}`)
+  if(list2.includes(data[8]) == false){
+    list2.push(data[8])
 
-    // block = xmldoc_teacher _teacher .createElement("block");
-    // block.setAttribute("name", `${data[1].replace(/ /g, "_")}`);
-    // rootxml.appendChild(block);
+    block = xmldoc_teacher.createElement("block");
+    block.setAttribute("name", data[8]);
+    rootxml_teacher.appendChild(block);
   }
 
-    status = xmldoc_teacher .createElement("status");
-    course = xmldoc_teacher .createElement("course");
-    crn = xmldoc_teacher .createElement("crn");
-    type = xmldoc_teacher .createElement("type");
-    day = xmldoc_teacher .createElement("day");
-    bT = xmldoc_teacher .createElement("beginTime");
-    eT = xmldoc_teacher .createElement("endTime");
-    block = xmldoc_teacher .createElement("block");
-    BR = xmldoc_teacher .createElement("BldgRoom");
-    startDate = xmldoc_teacher .createElement("startDate");
-    endDate = xmldoc_teacher .createElement("endDate");
-    max = xmldoc_teacher .createElement("max");
-    act = xmldoc_teacher .createElement("act");
-    hrs = xmldoc_teacher .createElement("hrs");
+    status = xmldoc_teacher.createElement("status");
+    course = xmldoc_teacher.createElement("course");
+    crn = xmldoc_teacher.createElement("crn");
+    type = xmldoc_teacher.createElement("type");
+    instr = xmldoc_teacher.createElement("instructor");
+    day = xmldoc_teacher.createElement("day");
+    bT = xmldoc_teacher.createElement("beginTime");
+    eT = xmldoc_teacher.createElement("endTime");
+    block = xmldoc_teacher.createElement("block");
+    BR = xmldoc_teacher.createElement("BldgRoom");
+    startDate = xmldoc_teacher.createElement("startDate");
+    endDate = xmldoc_teacher.createElement("endDate");
+    max = xmldoc_teacher.createElement("max");
+    act = xmldoc_teacher.createElement("act");
+    hrs = xmldoc_teacher.createElement("hrs");
 
     course.setAttribute("name", data[3]);
 
+    instr.textContent = data[8];
     status.textContent = data[0];
     block.textContent = data[1];
     crn.textContent = data[2];
@@ -187,7 +193,7 @@ function teacher_xml(data) {
     act.textContent = data[13];
     hrs.textContent = data[14];
     
-
+    course.appendChild(instr);
     course.appendChild(crn);
     course.appendChild(type);
     course.appendChild(day);
@@ -201,14 +207,19 @@ function teacher_xml(data) {
     course.appendChild(act);
     course.appendChild(hrs);
   
-    rootxml_teacher.getElementsByTagName(`${data[8].replace(/ /g, "_").replace(/,/g, '_').replace(/'/g, '_')}`)[0].appendChild(course)
+    for (i = 1; i < rootxml_teacher.childNodes.length; i++) {
+      if (rootxml_teacher.childNodes[i].getAttribute("name") == course.childNodes[0].textContent){
+          course.removeChild(course.childNodes[0])
+          rootxml_teacher.childNodes[i].appendChild(course)
+      }
+    }
 }
 
 function studentDisplayOrder() {
   let resultmenu = "<h1>STUDENT TIMETABLE:</h1>";
   let x = rootxml.childNodes;
   for (i = 1; i < x.length; i++) {
-    resultmenu += "<h3>Block: " + x[i].nodeName + "</h3>";
+    resultmenu += "<h3>Block: " + x[i].getAttribute("name") + "</h3>";
     resultmenu += studentShowCourse(x[i]);
   }
   return resultmenu;
@@ -219,41 +230,16 @@ function studentShowCourse(dat) {
   choices = dat.childNodes;
   for (y = 0; y < choices.length; y++) {
       result += "<p>Course: " + choices[y].getAttribute("name") + " - " + choices[y].childNodes[5].textContent +"</p>";
-    // if (choices[y].nodeName == "crn") {
-    //   result += "<p>CRN: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "type") {
-    //   result += "<p>Type: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "day") {
-    //   result += "<p>Day: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "beginTime") {
-    //   result += "<p>Begin Time: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "endTime") {
-    //   result += "<p>End Time: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "instructor") {
-    //   result += "<p>Instructor: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "BldgRoom") {
-    //   result += "<p>Building Room: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "startDate") {
-    //   result += "<p>Start Date: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "endDate") {
-    //   result += "<p>End Date: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "max") {
-    //   result += "<p>Max Student: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "act") {
-    //   result += "<p>Active Students: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "hrs") {
-    //   result += "<p>Hours: " + choices[y].textContent + "</p>";
-    // }
   }
   return result;
 }
 
 function teacherDisplayOrder() {
-  let resultmenu = "<h1>TEACHER TIMETABLE:</h1>";
+  let resultmenu = "<h1>INSTRUCTOR TIMETABLE:</h1>";
   let x = rootxml2.childNodes;
   for (i = 1; i < x.length; i++) {
-    resultmenu += "<h3>Instrutor: " + x[i].nodeName + "</h3>";
-    resultmenu += studentShowCourse(x[i]);
+    resultmenu += "<h3>Instructor: " + x[i].getAttribute("name") + "</h3>";
+    resultmenu += teacherShowCourse(x[i]);
   }
   return resultmenu;
 }
@@ -263,31 +249,6 @@ function teacherShowCourse(dat) {
   choices = dat.childNodes;
   for (y = 0; y < choices.length; y++) {
       result += "<p>Course: " + choices[y].getAttribute("name") + " - " + choices[y].childNodes[5].textContent +"</p>";
-    // if (choices[y].nodeName == "crn") {
-    //   result += "<p>CRN: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "type") {
-    //   result += "<p>Type: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "day") {
-    //   result += "<p>Day: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "beginTime") {
-    //   result += "<p>Begin Time: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "endTime") {
-    //   result += "<p>End Time: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "instructor") {
-    //   result += "<p>Instructor: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "BldgRoom") {
-    //   result += "<p>Building Room: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "startDate") {
-    //   result += "<p>Start Date: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "endDate") {
-    //   result += "<p>End Date: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "max") {
-    //   result += "<p>Max Student: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "act") {
-    //   result += "<p>Active Students: " + choices[y].textContent + "</p>";
-    // } else if (choices[y].nodeName == "hrs") {
-    //   result += "<p>Hours: " + choices[y].textContent + "</p>";
-    // }
   }
   return result;
 }
