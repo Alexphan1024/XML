@@ -113,20 +113,20 @@ function student_xml(data) {
 
       course.setAttribute("name", data[3]);
 
-      status.textContent = data[0];
-      block.textContent = data[1];
-      crn.textContent = data[2];
-      type.textContent = data[4];
-      day.textContent = data[5];
-      bT.textContent = data[6];
-      eT.textContent = data[7];
-      instr.textContent = data[8];
-      BR.textContent = data[9];
-      startDate.textContent = data[10];
-      endDate.textContent = data[11];
-      max.textContent = data[12];
-      act.textContent = data[13];
-      hrs.textContent = data[14];
+      status.textContent = data[0].replace(/\*/g, '').trim();
+      block.textContent = data[1].replace(/\*/g, '').trim();
+      crn.textContent = data[2].replace(/\*/g, '').trim();
+      type.textContent = data[4].replace(/\*/g, '').trim();
+      day.textContent = data[5].replace(/\*/g, '').trim();
+      bT.textContent = data[6].replace(/\*/g, '').trim();
+      eT.textContent = data[7].replace(/\*/g, '').trim();
+      instr.textContent = data[8].replace(/\*/g, '').trim();
+      BR.textContent = data[9].replace(/\*/g, '').trim();
+      startDate.textContent = data[10].replace(/\*/g, '').trim();
+      endDate.textContent = data[11].replace(/\*/g, '').trim();
+      max.textContent = data[12].replace(/\*/g, '').trim();
+      act.textContent = data[13].replace(/\*/g, '').trim();
+      hrs.textContent = data[14].replace(/\*/g, '').trim();
 
       course.appendChild(block);
       course.appendChild(crn);
@@ -178,20 +178,20 @@ function teacher_xml(data) {
 
     course.setAttribute("name", data[3]);
 
-    instr.textContent = data[8];
-    status.textContent = data[0];
-    block.textContent = data[1];
-    crn.textContent = data[2];
-    type.textContent = data[4];
-    day.textContent = data[5];
-    bT.textContent = data[6];
-    eT.textContent = data[7];
-    BR.textContent = data[9];
-    startDate.textContent = data[10];
-    endDate.textContent = data[11];
-    max.textContent = data[12];
-    act.textContent = data[13];
-    hrs.textContent = data[14];
+    instr.textContent = data[8].replace(/\*/g, '').trim();
+    status.textContent = data[0].replace(/\*/g, '').trim();
+    block.textContent = data[1].replace(/\*/g, '').trim();
+    crn.textContent = data[2].replace(/\*/g, '').trim();
+    type.textContent = data[4].replace(/\*/g, '').trim();
+    day.textContent = data[5].replace(/\*/g, '').trim();
+    bT.textContent = data[6].replace(/\*/g, '').trim();
+    eT.textContent = data[7].replace(/\*/g, '').trim();
+    BR.textContent = data[9].replace(/\*/g, '').trim();
+    startDate.textContent = data[10].replace(/\*/g, '').trim();
+    endDate.textContent = data[11].replace(/\*/g, '').trim();
+    max.textContent = data[12].replace(/\*/g, '').trim();
+    act.textContent = data[13].replace(/\*/g, '').trim();
+    hrs.textContent = data[14].replace(/\*/g, '').trim();
     
     course.appendChild(instr);
     course.appendChild(crn);
