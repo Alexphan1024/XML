@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="program">  
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="block" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>      
+    </xs:element>     
+
+    <xs:element name="block">  
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="course" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+        </xs:complexType>      
+    </xs:element>
+
+    <xs:element name="course">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="crn" type="xs:int"/>
+                <xs:element name="type" type="xs:string"/>
+                <xs:element name="day" type="xs:string"/>
+                <xs:element name="beginTime" type="xs:string"/>
+                <xs:element name="endTime" type="xs:string"/>
+                <xs:element name="instructor" type="xs:string"/>
+                <xs:element name="BldgRoom" type="xs:string"/>
+                <xs:element name="startDate" type="xs:string"/>
+                <xs:element name="endDate" type="xs:string"/>
+                <xs:element name="max" type="xs:int"/>
+                <xs:element name="act" type="xs:int"/>
+                <xs:element name="hrs" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+        </xs:complexType>    
+    </xs:element>
+      
+
+</xs:schema>

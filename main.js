@@ -1,10 +1,11 @@
 var fs = require("fs");
 var csv = require("csv-parse");
-
+var validator = require('xsd-schema-validator');
 var xmldom = require("xmldom");
+
 parser = new xmldom.DOMParser();
-xmldoc = parser.parseFromString("<program></program>", "text/xml");
-xmldoc_teacher = parser.parseFromString("<program></program>", "text/xml");
+xmldoc = parser.parseFromString(`<program xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="class.xsd"></program>`, "text/xml");
+xmldoc_teacher = parser.parseFromString(`<program xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="teacher.xsd"></program>`, "text/xml");
 rootxml = xmldoc.documentElement;
 rootxml_teacher = xmldoc_teacher.documentElement;
 var process_argv = process.argv[2];
@@ -15,6 +16,15 @@ var http = require("http");
 http
   .createServer(function(req, res) {
     data = fs.readFileSync(`data/201830-${process_argv}.xml`);
+
+    validator.validateXML(data, 'data/class.xsd', function (err, result) {
+        if (err) {
+          console.log(result);
+        }
+
+        result.valid; // true
+    });
+
     parser = new xmldom.DOMParser();
     xmldoc = parser.parseFromString(data.toString(), "text/xml");
     rootxml = xmldoc.documentElement;
@@ -22,6 +32,15 @@ http
     res.write(studentDisplayOrder());
 
     data2 = fs.readFileSync(`data/201830-${process_argv}-teacher.xml`);
+
+    validator.validateXML(data2, 'data/teacher.xsd', function (err, result) {
+        if (err) {
+          console.log(result);
+        }
+
+        result.valid; // true
+    });
+
     parser2 = new xmldom.DOMParser();
     xmldoc2 = parser2.parseFromString(data2.toString(), "text/xml");
     rootxml2 = xmldoc2.documentElement;
@@ -34,14 +53,16 @@ http
 function studentSaveData() {
   serializer = new xmldom.XMLSerializer();
   tosave = serializer.serializeToString(xmldoc);
-  tosave=`<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE classes SYSTEM "class.dtd">${tosave}`;
+  // tosave =`<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE program SYSTEM "class.dtd">${tosave}`;
+  tosave =`<?xml version="1.0" encoding="UTF-8"?>${tosave}`;
   fs.writeFileSync(`data/201830-${process_argv}.xml`, tosave);
 }
 
 function teacherSaveData() {
   serializer = new xmldom.XMLSerializer();
   tosave = serializer.serializeToString(xmldoc_teacher);
-  tosave=`<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE classes SYSTEM "teacher.dtd">${tosave}`;
+  // tosave =`<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE program SYSTEM "teacher.dtd">${tosave}`;
+  tosave=`<?xml version="1.0" encoding="UTF-8"?>${tosave}`;
   fs.writeFileSync(`data/201830-${process_argv}-teacher.xml`, tosave);
 }
 
@@ -219,7 +240,7 @@ function teacher_xml(data) {
 function studentDisplayOrder() {
   let resultmenu = "<h1>STUDENT TIMETABLE:</h1>";
   let x = rootxml.childNodes;
-  for (i = 1; i < x.length; i++) {
+  for (i = 0; i < x.length; i++) {
     resultmenu += "<h3>Block: " + x[i].getAttribute("name") + "</h3>";
     resultmenu += studentShowCourse(x[i]);
   }
@@ -238,7 +259,7 @@ function studentShowCourse(dat) {
 function teacherDisplayOrder() {
   let resultmenu = "<h1>INSTRUCTOR TIMETABLE:</h1>";
   let x = rootxml2.childNodes;
-  for (i = 1; i < x.length; i++) {
+  for (i = 0; i < x.length; i++) {
     resultmenu += "<h3>Instructor: " + x[i].getAttribute("name") + "</h3>";
     resultmenu += teacherShowCourse(x[i]);
   }
