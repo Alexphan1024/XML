@@ -53,16 +53,14 @@ http
 function studentSaveData() {
   serializer = new xmldom.XMLSerializer();
   tosave = serializer.serializeToString(xmldoc);
-  // tosave =`<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE program SYSTEM "class.dtd">${tosave}`;
-  tosave =`<?xml version="1.0" encoding="UTF-8"?>${tosave}`;
+  tosave =`<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE program SYSTEM "${__dirname}\\data\\class.dtd">${tosave}`;
   fs.writeFileSync(`data/201830-${process_argv}.xml`, tosave);
 }
 
 function teacherSaveData() {
   serializer = new xmldom.XMLSerializer();
   tosave = serializer.serializeToString(xmldoc_teacher);
-  // tosave =`<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE program SYSTEM "teacher.dtd">${tosave}`;
-  tosave=`<?xml version="1.0" encoding="UTF-8"?>${tosave}`;
+  tosave =`<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE program SYSTEM "${__dirname}\\data\\teacher.dtd">${tosave}`;
   fs.writeFileSync(`data/201830-${process_argv}-teacher.xml`, tosave);
 }
 
