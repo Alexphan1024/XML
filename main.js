@@ -1,11 +1,10 @@
 var fs = require("fs");
-data = fs.readFileSync("data/temp.xml");
 var csv = require("csv-parse");
 
 var xmldom = require("xmldom");
 parser = new xmldom.DOMParser();
-xmldoc = parser.parseFromString(data.toString(), "text/xml");
-xmldoc_teacher= parser.parseFromString(data.toString(), "text/xml");
+xmldoc = parser.parseFromString("<program></program>", "text/xml");
+xmldoc_teacher = parser.parseFromString("<program></program>", "text/xml");
 rootxml = xmldoc.documentElement;
 rootxml_teacher = xmldoc_teacher.documentElement;
 var process_argv = process.argv[2];
@@ -35,12 +34,14 @@ http
 function studentSaveData() {
   serializer = new xmldom.XMLSerializer();
   tosave = serializer.serializeToString(xmldoc);
+  tosave=`<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE classes SYSTEM "class.dtd">${tosave}`;
   fs.writeFileSync(`data/201830-${process_argv}.xml`, tosave);
 }
 
 function teacherSaveData() {
   serializer = new xmldom.XMLSerializer();
   tosave = serializer.serializeToString(xmldoc_teacher);
+  tosave=`<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE classes SYSTEM "teacher.dtd">${tosave}`;
   fs.writeFileSync(`data/201830-${process_argv}-teacher.xml`, tosave);
 }
 
@@ -142,7 +143,7 @@ function student_xml(data) {
       course.appendChild(act);
       course.appendChild(hrs);
 
-      for (i = 1; i < rootxml.childNodes.length; i++) {
+      for (i = 0; i < rootxml.childNodes.length; i++) {
         if (rootxml.childNodes[i].getAttribute("name") == course.childNodes[0].textContent){
             course.removeChild(course.childNodes[0])
             rootxml.childNodes[i].appendChild(course)
@@ -207,7 +208,7 @@ function teacher_xml(data) {
     course.appendChild(act);
     course.appendChild(hrs);
   
-    for (i = 1; i < rootxml_teacher.childNodes.length; i++) {
+    for (i = 0; i < rootxml_teacher.childNodes.length; i++) {
       if (rootxml_teacher.childNodes[i].getAttribute("name") == course.childNodes[0].textContent){
           course.removeChild(course.childNodes[0])
           rootxml_teacher.childNodes[i].appendChild(course)
