@@ -71,7 +71,9 @@ function add_from_csv_student() {
     .on("readable", function() {
       let record;
       while ((record = this.read())) {
+          //checks if process.argv is part of program name
         if (record[1].includes(process.argv[2].toUpperCase())) {
+            //cleaning data
           if (record[8].includes("*") || record[8] == " ," || record[0] == "Inactive") {
             continue;
           } else {
@@ -91,8 +93,10 @@ function add_from_csv_teacher() {
     .on("readable", function() {
       let record;
       while ((record = this.read())) {
+        //checks if process.argv is part of program name
         if (record[1].includes(process.argv[2].toUpperCase())) {
-          if (record[8].includes("*") || record[8] == " ,") {
+          //cleaning data
+          if (record[8].includes("*") || record[8] == " ,"|| record[0] == "Inactive") {
             continue;
           } else {
             teacher_xml(record)
@@ -107,9 +111,9 @@ function add_from_csv_teacher() {
 
 var list = [];
 function student_xml(data) {
+  // Checks if the block value is unique, if the block value is unique create add to rootxml
     if(list.includes(data[1].replace(/\*/g, '').trim()) == false){
       list.push(data[1].replace(/\*/g, '').trim())
-
       block = xmldoc.createElement("block");
       block.setAttribute("name", data[1].replace(/\*/g, '').trim());
       rootxml.appendChild(block);
@@ -133,6 +137,7 @@ function student_xml(data) {
 
       course.setAttribute("name", data[3]);
 
+      //.replace(/\*/g, '').trim() cleans data, remove * and trimming
       status.textContent = data[0].replace(/\*/g, '').trim();
       block.textContent = data[1].replace(/\*/g, '').trim();
       crn.textContent = data[2].replace(/\*/g, '').trim();
@@ -162,6 +167,7 @@ function student_xml(data) {
       course.appendChild(act);
       course.appendChild(hrs);
 
+      //add course to specific block 
       for (i = 0; i < rootxml.childNodes.length; i++) {
         if (rootxml.childNodes[i].getAttribute("name") == course.childNodes[0].textContent){
             course.removeChild(course.childNodes[0])
@@ -172,6 +178,7 @@ function student_xml(data) {
 
 var list2 = [];
 function teacher_xml(data) {
+  // Checks if the intructor value is unique, if the intructor value is unique create add to rootxml
   if(list2.includes(data[8].replace(/\*/g, '').trim()) == false){
     list2.push(data[8].replace(/\*/g, '').trim())
 
@@ -198,6 +205,7 @@ function teacher_xml(data) {
 
     course.setAttribute("name", data[3]);
 
+    //.replace(/\*/g, '').trim() cleans data, remove * and trimming
     instr.textContent = data[8].replace(/\*/g, '').trim();
     status.textContent = data[0].replace(/\*/g, '').trim();
     block.textContent = data[1].replace(/\*/g, '').trim();
@@ -227,6 +235,7 @@ function teacher_xml(data) {
     course.appendChild(act);
     course.appendChild(hrs);
   
+    //add course to specific intructor
     for (i = 0; i < rootxml_teacher.childNodes.length; i++) {
       if (rootxml_teacher.childNodes[i].getAttribute("name") == course.childNodes[0].textContent){
           course.removeChild(course.childNodes[0])
@@ -249,7 +258,7 @@ function studentShowCourse(dat) {
   result = "";
   choices = dat.childNodes;
   for (y = 0; y < choices.length; y++) {
-      result += "<p>Course: " + choices[y].getAttribute("name") + " - " + choices[y].childNodes[5].textContent +"</p>";
+      result += `<p>Course: ${choices[y].getAttribute("name")} - ${choices[y].childNodes[5].textContent} -- ${choices[y].childNodes[2].textContent} ${choices[y].childNodes[3].textContent}-${choices[y].childNodes[4].textContent} </p>`;
   }
   return result;
 }
@@ -268,7 +277,7 @@ function teacherShowCourse(dat) {
   result = "";
   choices = dat.childNodes;
   for (y = 0; y < choices.length; y++) {
-      result += "<p>Course: " + choices[y].getAttribute("name") + " - " + choices[y].childNodes[5].textContent +"</p>";
+      result += `<p>Course: ${choices[y].getAttribute("name")} - ${choices[y].childNodes[5].textContent} -- ${choices[y].childNodes[2].textContent} ${choices[y].childNodes[3].textContent}-${choices[y].childNodes[4].textContent} </p>`;
   }
   return result;
 }
