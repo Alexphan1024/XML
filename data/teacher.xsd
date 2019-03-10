@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="Annotation.xsl"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
     <xs:element name="program">  
@@ -21,22 +22,67 @@
     <xs:element name="course">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="crn" type="xs:int"/>
+                <xs:element name="crn" type="crnType"/>
                 <xs:element name="type" type="xs:string"/>
-                <xs:element name="day" type="xs:string"/>
-                <xs:element name="beginTime" type="xs:string"/>
-                <xs:element name="endTime" type="xs:string"/>
-                <xs:element name="block" type="xs:string"/>
+                <xs:element name="day" type="dayType"/>
+                <xs:element name="beginTime" type="btType"/>
+                <xs:element name="endTime" type="etType"/>
+                <xs:element name="block" type="blockType"/>
                 <xs:element name="BldgRoom" type="xs:string"/>
-                <xs:element name="startDate" type="xs:string"/>
-                <xs:element name="endDate" type="xs:string"/>
-                <xs:element name="max" type="xs:int"/>
-                <xs:element name="act" type="xs:int"/>
+                <xs:element name="startDate" type="dateType"/>
+                <xs:element name="endDate" type="dateType"/>
+                <xs:element name="max" type="xs:integer"/>
+                <xs:element name="act" type="xs:integer"/>
                 <xs:element name="hrs" type="xs:string"/>
             </xs:sequence>
-            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="name" type="courseType" use="required"/>
         </xs:complexType>    
     </xs:element>
       
+    <xs:simpleType name="blockType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z] [0-9] [a-zA-Z]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="courseType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z][0-9][0-9][0-9][0-9]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="crnType">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-9]{5}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="dayType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Mon"/>
+            <xs:enumeration value="Tue"/>
+            <xs:enumeration value="Wed"/>
+            <xs:enumeration value="Thu"/>
+            <xs:enumeration value="Fri"/>
+        </xs:restriction>
+    </xs:simpleType> 
+
+    <xs:simpleType name="btType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="830"/>
+        </xs:restriction>
+    </xs:simpleType> 
+
+    <xs:simpleType name="etType">
+        <xs:restriction base="xs:integer">
+            <xs:maxInclusive value="1720"/>
+        </xs:restriction>
+    </xs:simpleType> 
+
+    <xs:simpleType name="dateType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9][0-9] [a-zA-Z][a-zA-Z][a-zA-Z] [0-9][0-9][0-9][0-9]"/>
+        </xs:restriction>
+    </xs:simpleType>
 
 </xs:schema>
