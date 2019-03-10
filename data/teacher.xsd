@@ -24,15 +24,36 @@
             <xs:sequence>
                 <xs:element name="crn" type="crnType"/>
                 <xs:element name="type" type="xs:string"/>
-                <xs:element name="day" type="dayType"/>
+                <xs:element name="day" type="dayType">
+                <xs:annotation>
+                    <xs:appinfo>day element</xs:appinfo>
+                    <xs:documentation>
+                        Can be Mon, Tue, Wed, Thu, or Fri
+                    </xs:documentation>
+                </xs:annotation>
+                </xs:element>
                 <xs:element name="beginTime" type="btType"/>
                 <xs:element name="endTime" type="etType"/>
                 <xs:element name="block" type="blockType"/>
                 <xs:element name="BldgRoom" type="xs:string"/>
                 <xs:element name="startDate" type="dateType"/>
                 <xs:element name="endDate" type="dateType"/>
-                <xs:element name="max" type="xs:integer"/>
-                <xs:element name="act" type="xs:integer"/>
+                <xs:element name="max" type="xs:integer">
+                <xs:annotation>
+                    <xs:appinfo>max element</xs:appinfo>
+                    <xs:documentation>
+                        Maximum amount of students within the class is 25
+                    </xs:documentation>
+                </xs:annotation>
+                </xs:element>
+                <xs:element name="act" type="xs:integer">
+                <xs:annotation>
+                    <xs:appinfo>act element</xs:appinfo>
+                    <xs:documentation>
+                        Amount of students currently within the class 
+                    </xs:documentation>
+                </xs:annotation>
+                </xs:element>
                 <xs:element name="hrs" type="xs:string"/>
             </xs:sequence>
             <xs:attribute name="name" type="courseType" use="required"/>
