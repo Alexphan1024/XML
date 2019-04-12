@@ -50,6 +50,7 @@ http
   })
   .listen(8080); //the server object listens on port 8080
 
+// Function that adds the XML header and XML contents for students
 function studentSaveData() {
   serializer = new xmldom.XMLSerializer();
   tosave = serializer.serializeToString(xmldoc);
@@ -57,6 +58,7 @@ function studentSaveData() {
   fs.writeFileSync(`data/201830-${process_argv}.xml`, tosave);
 }
 
+// Function that adds the XML header and XML contents for teachers
 function teacherSaveData() {
   serializer = new xmldom.XMLSerializer();
   tosave = serializer.serializeToString(xmldoc_teacher);
@@ -64,7 +66,7 @@ function teacherSaveData() {
   fs.writeFileSync(`data/201830-${process_argv}-teacher.xml`, tosave);
 }
 
-
+// Function to add data from csv to XML for students
 function add_from_csv_student() {
   csvdata = fs.readFileSync("data/201830-Subject_Course Timetables.csv");
   csv(csvdata, { trim: true, skip_empty_lines: true, from_line: 2 })
@@ -87,6 +89,7 @@ function add_from_csv_student() {
     });
 }
 
+// Function to add data from csv to XML for teachers
 function add_from_csv_teacher() {
   csvdata = fs.readFileSync("data/201830-Subject_Course Timetables.csv");
   csv(csvdata, { trim: true, skip_empty_lines: true, from_line: 2 })
@@ -109,6 +112,7 @@ function add_from_csv_teacher() {
     });
 }
 
+// Function to create XML elements and populates it with student data
 var list = [];
 function student_xml(data) {
   // Checks if the block value is unique, if the block value is unique create add to rootxml
@@ -176,6 +180,7 @@ function student_xml(data) {
       }
 }
 
+// Function to create XML elements and populates it with teacher data
 var list2 = [];
 function teacher_xml(data) {
   // Checks if the intructor value is unique, if the intructor value is unique create add to rootxml
@@ -244,6 +249,7 @@ function teacher_xml(data) {
     }
 }
 
+// Function to display student timetables
 function studentDisplayOrder() {
   let resultmenu = "<h1>STUDENT TIMETABLE:</h1>";
   let x = rootxml.childNodes;
@@ -263,6 +269,7 @@ function studentShowCourse(dat) {
   return result;
 }
 
+// Function to display teacher timetables
 function teacherDisplayOrder() {
   let resultmenu = "<h1>INSTRUCTOR TIMETABLE:</h1>";
   let x = rootxml2.childNodes;

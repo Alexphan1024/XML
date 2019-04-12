@@ -61,18 +61,36 @@
     </xs:element>
       
     <xs:simpleType name="blockType">
+        <xs:annotation>
+            <xs:appinfo>block element</xs:appinfo>
+            <xs:documentation>
+                Always the format of 4 alphabets 1 digit 1 alphabets
+            </xs:documentation>
+        </xs:annotation> 
         <xs:restriction base="xs:string">
             <xs:pattern value="[a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z] [0-9] [a-zA-Z]"/>
         </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="courseType">
+        <xs:annotation>
+            <xs:appinfo>course type</xs:appinfo>
+            <xs:documentation>
+                Format of 4 alphabets + 4 digits
+            </xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string">
             <xs:pattern value="[a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z][0-9][0-9][0-9][0-9]"/>
         </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="crnType">
+        <xs:annotation>
+            <xs:appinfo>end time type</xs:appinfo>
+            <xs:documentation>
+                Format must be 5 digits 
+            </xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:integer">
             <xs:pattern value="[0-9]{5}"/>
         </xs:restriction>
@@ -89,18 +107,36 @@
     </xs:simpleType> 
 
     <xs:simpleType name="btType">
+        <xs:annotation>
+            <xs:appinfo>begin time type</xs:appinfo>
+            <xs:documentation>
+                Value cannot be less than 830
+            </xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:integer">
             <xs:minInclusive value="830"/>
         </xs:restriction>
     </xs:simpleType> 
 
     <xs:simpleType name="etType">
+        <xs:annotation>
+            <xs:appinfo>end time type</xs:appinfo>
+            <xs:documentation>
+                Value cannot be more than 1720
+            </xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:integer">
             <xs:maxInclusive value="1720"/>
         </xs:restriction>
     </xs:simpleType> 
 
     <xs:simpleType name="dateType">
+        <xs:annotation>
+            <xs:appinfo>date type</xs:appinfo>
+            <xs:documentation>
+                Format of dd mmm yyyy 
+            </xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string">
             <xs:pattern value="[0-9][0-9] [a-zA-Z][a-zA-Z][a-zA-Z] [0-9][0-9][0-9][0-9]"/>
         </xs:restriction>
