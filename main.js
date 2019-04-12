@@ -53,14 +53,14 @@ http
 function studentSaveData() {
   serializer = new xmldom.XMLSerializer();
   tosave = serializer.serializeToString(xmldoc);
-  tosave =`<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE program SYSTEM "${__dirname}\\data\\class.dtd">${tosave}`;
+  tosave =`<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='student_timetable.xsl'?><!DOCTYPE program SYSTEM "${__dirname}\\data\\class.dtd">${tosave}`;
   fs.writeFileSync(`data/201830-${process_argv}.xml`, tosave);
 }
 
 function teacherSaveData() {
   serializer = new xmldom.XMLSerializer();
   tosave = serializer.serializeToString(xmldoc_teacher);
-  tosave =`<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE program SYSTEM "${__dirname}\\data\\teacher.dtd">${tosave}`;
+  tosave =`<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='teacher_timetable.xsl'?><!DOCTYPE program SYSTEM "${__dirname}\\data\\teacher.dtd">${tosave}`;
   fs.writeFileSync(`data/201830-${process_argv}-teacher.xml`, tosave);
 }
 
@@ -181,7 +181,7 @@ function teacher_xml(data) {
   // Checks if the intructor value is unique, if the intructor value is unique create add to rootxml
   if(list2.includes(data[8].replace(/\*/g, '').trim()) == false){
     list2.push(data[8].replace(/\*/g, '').trim())
-
+    list.sort();
     block = xmldoc_teacher.createElement("instructor");
     block.setAttribute("name", data[8].replace(/\*/g, '').trim());
     rootxml_teacher.appendChild(block);
