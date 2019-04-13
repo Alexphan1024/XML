@@ -27,49 +27,49 @@
                             <xsl:for-each select="course">
                                 <xsl:sort select="beginTime" data-type="number" order="ascending"/>
                                 <xsl:if test="day='Mon'">
-                                            <xsl:if test="beginTime=830">
-                                                 <th>
-                                                    <xsl:value-of select="@name" /> <br></br>
-                                                    <xsl:value-of select="instructor" /> <br></br>
-                                                    <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
-                                                    #<xsl:value-of select="crn" />
-                                                </th> 
-                                                <th>
-                                                    <xsl:value-of select="@name" /> <br></br>
-                                                    <xsl:value-of select="instructor" /> <br></br>
-                                                    <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
-                                                    #<xsl:value-of select="crn" />
-                                                </th> 
-                                                <th>
-                                                    <xsl:value-of select="@name" /> <br></br>
-                                                    <xsl:value-of select="instructor" /> <br></br>
-                                                    <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
-                                                    #<xsl:value-of select="crn" />
-                                                </th>
-                                                <th></th>
-                                                <th></th>
-                                            </xsl:if>
-                                            <xsl:if test="beginTime=1330">
-                                                <th>
-                                                    <xsl:value-of select="@name" /> <br></br>
-                                                    <xsl:value-of select="instructor" /> <br></br>
-                                                    <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
-                                                    #<xsl:value-of select="crn" />
-                                                </th> 
-                                                <th>
-                                                    <xsl:value-of select="@name" /> <br></br>
-                                                    <xsl:value-of select="instructor" /> <br></br>
-                                                    <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
-                                                    #<xsl:value-of select="crn" />
-                                                </th> 
-                                                <th>
-                                                    <xsl:value-of select="@name" /> <br></br>
-                                                    <xsl:value-of select="instructor" /> <br></br>
-                                                    <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
-                                                    #<xsl:value-of select="crn" />
-                                                </th>
-                                                <th></th>
-                                            </xsl:if>
+                                    <xsl:if test="beginTime=830">
+                                            <th>
+                                            <xsl:value-of select="@name" /> <br></br>
+                                            <xsl:value-of select="instructor" /> <br></br>
+                                            <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
+                                            #<xsl:value-of select="crn" />
+                                        </th> 
+                                        <th>
+                                            <xsl:value-of select="@name" /> <br></br>
+                                            <xsl:value-of select="instructor" /> <br></br>
+                                            <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
+                                            #<xsl:value-of select="crn" />
+                                        </th> 
+                                        <th>
+                                            <xsl:value-of select="@name" /> <br></br>
+                                            <xsl:value-of select="instructor" /> <br></br>
+                                            <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
+                                            #<xsl:value-of select="crn" />
+                                        </th>
+                                        <th></th>
+                                        <th></th>
+                                    </xsl:if>
+                                    <xsl:if test="beginTime=1330">
+                                        <th>
+                                            <xsl:value-of select="@name" /> <br></br>
+                                            <xsl:value-of select="instructor" /> <br></br>
+                                            <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
+                                            #<xsl:value-of select="crn" />
+                                        </th> 
+                                        <th>
+                                            <xsl:value-of select="@name" /> <br></br>
+                                            <xsl:value-of select="instructor" /> <br></br>
+                                            <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
+                                            #<xsl:value-of select="crn" />
+                                        </th> 
+                                        <th>
+                                            <xsl:value-of select="@name" /> <br></br>
+                                            <xsl:value-of select="instructor" /> <br></br>
+                                            <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
+                                            #<xsl:value-of select="crn" />
+                                        </th>
+                                        <th></th>
+                                    </xsl:if>
                                 </xsl:if>
                             </xsl:for-each>
                             </xsl:if>
@@ -131,6 +131,30 @@
                                                 <th></th>
                                             </xsl:when>
                                             <xsl:otherwise>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th>
+                                                    <xsl:value-of select="@name" /> <br></br>
+                                                    <xsl:value-of select="instructor" /> <br></br>
+                                                    <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
+                                                    #<xsl:value-of select="crn" />
+                                                </th> 
+                                                <th>
+                                                    <xsl:value-of select="@name" /> <br></br>
+                                                    <xsl:value-of select="instructor" /> <br></br>
+                                                    <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
+                                                    #<xsl:value-of select="crn" />
+                                                </th> 
+                                                <th>
+                                                    <xsl:value-of select="@name" /> <br></br>
+                                                    <xsl:value-of select="instructor" /> <br></br>
+                                                    <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
+                                                    #<xsl:value-of select="crn" />
+                                                </th>
+                                                <th></th>
+                                                <th></th>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                 </xsl:if>
@@ -255,6 +279,17 @@
                         </tr>
                         <tr>
                             <th>Wednesday</th>
+                            <xsl:if test="count(course/day[text() = 'Wed']) = 0">
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </xsl:if>
                              <xsl:if test="count(course/day[text() = 'Wed']) = 2">
                             <xsl:for-each select="course">
                                 <xsl:sort select="beginTime" data-type="number" order="ascending"/>
@@ -363,6 +398,30 @@
                                                 <th></th>
                                             </xsl:when>
                                             <xsl:otherwise>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th>
+                                                    <xsl:value-of select="@name" /> <br></br>
+                                                    <xsl:value-of select="instructor" /> <br></br>
+                                                    <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
+                                                    #<xsl:value-of select="crn" />
+                                                </th> 
+                                                <th>
+                                                    <xsl:value-of select="@name" /> <br></br>
+                                                    <xsl:value-of select="instructor" /> <br></br>
+                                                    <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
+                                                    #<xsl:value-of select="crn" />
+                                                </th> 
+                                                <th>
+                                                    <xsl:value-of select="@name" /> <br></br>
+                                                    <xsl:value-of select="instructor" /> <br></br>
+                                                    <xsl:value-of select="BldgRoom" />&#160;(<xsl:value-of select="act" />)<br></br>
+                                                    #<xsl:value-of select="crn" />
+                                                </th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                 </xsl:if>
