@@ -120,6 +120,15 @@
                                                 <th></th>
                                             </xsl:when>
                                             <xsl:otherwise>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                 </xsl:if>
@@ -224,6 +233,15 @@
                                                 <th></th>
                                             </xsl:when>
                                             <xsl:otherwise>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                 </xsl:if>
@@ -328,6 +346,15 @@
                                                 <th></th>
                                             </xsl:when>
                                             <xsl:otherwise>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                 </xsl:if>
@@ -432,6 +459,15 @@
                                                 <th></th>
                                             </xsl:when>
                                             <xsl:otherwise>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                 </xsl:if>
@@ -536,6 +572,15 @@
                                                 <th></th>
                                             </xsl:when>
                                             <xsl:otherwise>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                 </xsl:if>
