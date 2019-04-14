@@ -9,6 +9,9 @@
                     <H2>
                         <xsl:value-of select="@name" />
                     </H2>
+                    <H3>
+                        Total Hours: <xsl:value-of select="sum(course/hrs)" />
+                    </H3>
                     <table border="1" style="width:100%; height:50%;">
                         <tr>
                             <th></th>
